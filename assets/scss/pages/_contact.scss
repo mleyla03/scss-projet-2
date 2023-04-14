@@ -1,0 +1,31 @@
+.contact{
+   
+ 
+   
+    .map {
+        height: 30rem;        @include  for-phone{
+            max-width: 576px;
+          }
+          @include for-tablet{
+             max-width: 720px;
+          }
+          @include for-laptop{
+            max-width: 960px;
+            margin-top: 700px;
+          }
+          @include for-large-desktop{
+              max-width: 1140px;
+          }
+          @include for-xxl-large-desktop{
+              max-width: 1320px;
+          }
+      }
+      .map iframe {
+        pointer-events: none;
+        height: 100%;
+        width: 100%;
+        border: 0;
+
+      }
+
+}

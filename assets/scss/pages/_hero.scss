@@ -1,0 +1,67 @@
+#home{
+ 
+ 
+       width: 100%;
+    height: 100vh;
+  
+    background-position: top;
+    position: relative;
+     background-size: cover;
+    background-image: url(https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/src/assets/img/bg-masthead.jpg?raw=true); 
+    @extend %center-div; 
+  justify-content: center;
+
+    
+  .home-about{
+   width: 80%;
+   @extend %center-div;
+   justify-content: center;
+   flex-direction: column;
+  
+  }
+  h1{
+    font-size: 80px;
+  }
+  p{
+    font-size: 24px; margin: 30px auto;
+    font-family:$family-two ;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .btn{
+    @extend %center-div;
+    justify-content: center;
+  }
+  button{
+    width: 150px;
+    height: 60px;
+   
+    border:  none;
+    border-radius: 10px;
+   
+    @include box(white,rgb(69, 69, 236))
+  }
+  .learn-more{
+    @include  for-phone{
+      max-width: 576px;
+    }
+    @include for-tablet{
+       max-width: 720px;
+    }
+    @include for-laptop{
+      max-width: 960px;
+    }
+    @include for-large-desktop{
+        max-width: 1140px;
+    }
+    @include for-xxl-large-desktop{
+        max-width: 1320px;
+    }
+ 
+
+  }
+
+  
+ 
+    
+}

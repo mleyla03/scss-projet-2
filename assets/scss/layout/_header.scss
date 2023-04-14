@@ -1,0 +1,60 @@
+.navbar{
+   position: fixed;
+   width: 100%;
+   z-index: 9999;
+    padding: 1em 0;
+
+    background-color:$bColor ;  
+    .container{
+        margin: 0 auto;
+    @extend %center-div;
+     width: 85%;
+     justify-content: space-between;
+    
+    
+     h2{
+        font-family: $family-one;
+       
+        font-size:$h1size ;
+
+        a{
+            color: $color;
+            text-transform: capitalize;
+            
+        }
+     }
+   }
+    .navbar-button{
+        padding: 0.75rem;
+        font-size: $bsize;
+        text-transform: uppercase;
+        display: none;
+        @include for-tablet{
+            display: flex;
+        }
+    }
+}
+.nav-links
+{
+    display: flex;
+    @include for-tablet{
+        display: none;
+    }
+    li{
+
+        margin-right: 25px;
+        a{
+            color: #E3E3E4;
+            font-size: $lisize;
+            &:hover{
+                  color:$color ; 
+                  transition: 3s;
+            }
+             
+            
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,55 @@
+.about{
+  padding: 50px 0;
+  width: 100%;
+  height: 400px;
+   @extend %center-div;
+  justify-content: center;
+ 
+  background-color: #F8F9FA;
+  .about-page{
+    width: 80%;
+    @extend %center-div;
+    justify-content: center;
+ 
+  }
+  h2{
+    font-size: 30px;
+  }
+  p{
+    font-size: 24px; margin: 10px auto;
+    font-family:$family-two ;
+    
+  
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+  }
+  button{
+    width: 150px;
+    height: 60px;
+  
+    border:  none;
+    border-radius: 10px;
+  
+    @include box(white,black);
+    margin: 0 auto;
+  }
+  .offer-more{
+    @include  for-phone{
+      max-width: 576px;
+    }
+    @include for-tablet{
+       max-width: 720px;
+    }
+    @include for-laptop{
+      max-width: 960px;
+    }
+    @include for-large-desktop{
+        max-width: 1140px;
+    }
+    @include for-xxl-large-desktop{
+        max-width: 1320px;
+    }
+  }
+}
